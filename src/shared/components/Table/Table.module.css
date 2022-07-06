@@ -1,0 +1,8 @@
+.table {
+    max-width: 1fr;
+    width: 100%;
+    display: table;
+    overflow-y:auto;
+}
+
+.table,.thead,.tbody,.tr, .td {width:100%; display: table; font-size: 13px;}

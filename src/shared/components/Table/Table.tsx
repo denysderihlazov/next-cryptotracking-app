@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
-
+import { Input } from '../';
+import styles from "./Table.module.css";
 
 export const Table = (props) => {
 
@@ -32,20 +33,18 @@ export const Table = (props) => {
             {...props}
         >
             <h1>All Cryptocurrencies</h1>
-            <input
+            <Input
                 type="text"
                 placeholder="Search..."
                 onChange={(e) => {
                     setSearch(e.target.value);
                 }}
             />
-            <table>
+            <table className={styles.table}>
                 <thead>
                     <tr>
                         <td>Rank</td>
                         <td>Name</td>
-                        <td>Symbol</td>
-                        <td>Market Cap</td>
                         <td>Price</td>
                         <td>Volume(24hrs)</td>
                         <td>Symbol</td>
@@ -62,8 +61,8 @@ export const Table = (props) => {
                             return (
                                 <React.Fragment key={id}>
                                     <tr id={id.toString()}>
-                                        <td className="rank">{val.rank}</td>
-                                        <td className="logo">
+                                        <td>{val.rank}</td>
+                                        <td>
                                             <a href={val.websiteUrl}>
                                                 <picture>
                                                     <img src={val.icon} alt="logo" width="30px" />
@@ -73,8 +72,6 @@ export const Table = (props) => {
                                             <p>{val.name}</p>
 
                                         </td>
-                                        <td className="symbol">{val.symbol}</td>
-                                        <td>${(val.marketCap / 1000000000).toFixed(1)} B</td>
                                         <td>${val.price < 0.01 ? val.price.toFixed(4) : val.price.toFixed(2) }</td>
                                         <td>${(val.volume / 1000000000).toFixed(1)} B</td>
                                         <td>{val.symbol}</td>
