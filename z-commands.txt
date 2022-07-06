@@ -1,3 +1,0 @@
-1) To create our Next.js app we need to use
-
-npx create-next-app . --use-npm
