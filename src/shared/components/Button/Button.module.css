@@ -61,6 +61,7 @@
     background: none;
     border-radius: 0px;
     justify-content: center;
+    border-bottom: 3px solid transparent;
 }
 
 .chart:hover{
