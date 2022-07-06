@@ -45,9 +45,11 @@ export const Table = (props) => {
                     <tr>
                         <td>Rank</td>
                         <td>Name</td>
+                        <td>Symbol</td>
+                        <td>Total Supply</td>
+                        <td>Market Cap</td>
                         <td>Price</td>
                         <td>Volume(24hrs)</td>
-                        <td>Symbol</td>
                     </tr>
                 </thead>
                 {/* Mapping all the cryptos */}
@@ -72,9 +74,11 @@ export const Table = (props) => {
                                             <p>{val.name}</p>
 
                                         </td>
+                                        <td className="symbol">{val.symbol}</td>
+                                        <td>${(val.totalSupply / 1000000).toFixed(0)} K</td>
+                                        <td>${(val.marketCap / 1000000000).toFixed(1)} B</td>
                                         <td>${val.price < 0.01 ? val.price.toFixed(4) : val.price.toFixed(2) }</td>
                                         <td>${(val.volume / 1000000000).toFixed(1)} B</td>
-                                        <td>{val.symbol}</td>
                                     </tr>
                                 </React.Fragment>//val.price.toFixed(4)
                             );

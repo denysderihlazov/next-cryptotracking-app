@@ -14,8 +14,8 @@
 @media (max-width: 720px) {
     .Chart {
         display: block;
-        max-width:45%;
+        max-width:55%;
         max-height: 320px;
-        
+        justify-content: center;
     }
 }
