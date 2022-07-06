@@ -1,0 +1,13 @@
+name: Build and release Next.js web app
+on: push
+jobs:
+  build-project:
+    name: Build Next.js app
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install NPM dependencies
+        uses: npm Install
+      - name: Build static website
+        uses: npm run build
