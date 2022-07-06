@@ -1,0 +1,30 @@
+.Chart {
+    display: inline-table;
+    max-width: 20%;
+    max-height: 120px;
+    cursor: pointer;
+    margin-left: 30px;
+    
+}
+
+.info {
+    color: rgba(75,74,124,255)
+}
+
+@media (max-width: 765px) {
+    .wrapper {
+        grid-template-columns: minmax(320px, 1fr);
+        grid-template-areas:
+            "header" 
+            "body" 
+            "footer";
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .header {
+        display: block;
+    }
+}

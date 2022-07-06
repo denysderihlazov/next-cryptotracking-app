@@ -1,0 +1,14 @@
+/* stylelint-disable order/properties-order */
+/* stylelint-disable indentation */
+
+.filled svg {
+    fill: var(--primary);
+}
+
+.star svg {
+    margin-right: 5px;
+}
+
+.editable {
+    cursor: pointer;
+}

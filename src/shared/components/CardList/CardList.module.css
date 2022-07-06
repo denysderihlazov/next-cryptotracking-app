@@ -1,0 +1,7 @@
+.CardList {
+    display: flex;
+}
+  
+.Card:first-child {
+    margin-left: 0;
+}

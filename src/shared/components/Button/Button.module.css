@@ -1,0 +1,72 @@
+/* stylelint-disable order/properties-order */
+/* stylelint-disable indentation */
+
+.button {
+    display: inline-block;
+
+    box-sizing: border-box;
+    padding: 10px;
+
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+
+    font-size: 14px;
+    transition: all 0.25s;
+}
+
+.primary {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.primary:hover {
+    background-color: var(--primary-hover);
+}
+
+.ghost {
+    color: var(--black);
+    background: none;
+    border: 1px solid var(--gray-light);
+    transition: all 0.25s;
+}
+
+.ghost:hover {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.arrow {
+    display: inline-block;
+
+    margin-left: 10px;
+}
+
+.down {
+    transform: rotate(90deg);
+    transition: all 0.25s;
+}
+
+.primary svg,
+.ghost:hover svg {
+    fill: var(--white);
+}
+
+.chart {
+    display: inline-block;
+    display: flex;
+    min-width: 55px;
+    color: var(--white);
+    background: none;
+    border-radius: 0px;
+    justify-content: center;
+}
+
+.chart:hover{
+    color: var(--white);
+    background: none;
+    border-bottom: 3px solid var(--primary-hover);
+    transition: all 0s;
+    padding-bottom: 20xp;
+}

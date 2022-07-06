@@ -1,0 +1,18 @@
+.Chart {
+    display: inline-table;
+    max-width: 20%;
+    max-height: 120px;
+    cursor: pointer;
+    margin-left: 30px;
+    
+}
+
+.info {
+    color: rgba(75,74,124,255);
+    display: inline;
+}
+
+.percent {
+
+    float: inline-end;
+}

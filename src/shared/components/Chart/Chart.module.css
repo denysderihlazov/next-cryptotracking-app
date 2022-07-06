@@ -1,0 +1,10 @@
+.Chart {
+    display: grid;
+    max-width: 1fr;
+    max-height: 1fr;
+}
+
+.btn {
+        display: inline-flex;
+        padding: 50px;
+}

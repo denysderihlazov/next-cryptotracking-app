@@ -1,0 +1,24 @@
+.menuFirstLevel {
+    display: block;
+    grid-template-columns: 24px 1fr;
+    gap: 20px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.secondBlock {
+    margin-top: 35px;
+    margin-left: 12px;
+    padding-left: 32px;
+    border-left: 1px solid var(--primary-hover);
+}
+
+.secondBlock > p {
+    padding-bottom: 20px;
+}
+
+
+
+
