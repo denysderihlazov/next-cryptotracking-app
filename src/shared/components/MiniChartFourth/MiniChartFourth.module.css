@@ -7,12 +7,15 @@
     
 }
 
-
 .info {
-    color: rgba(75,74,124,255);
-    
+    color: rgba(75,74,124,255)
 }
 
-/*.info > p {
-    display: inline-block;
-}*/
+@media (max-width: 720px) {
+    .Chart {
+        display: block;
+        max-width:45%;
+        max-height: 320px;
+        
+    }
+}

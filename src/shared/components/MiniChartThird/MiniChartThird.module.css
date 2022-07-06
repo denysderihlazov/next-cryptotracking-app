@@ -8,11 +8,14 @@
 }
 
 .info {
-    color: rgba(75,74,124,255);
-    display: inline;
+    color: rgba(75,74,124,255)
 }
 
-.percent {
-
-    float: inline-end;
+@media (max-width: 720px) {
+    .Chart {
+        display: block;
+        max-width:45%;
+        max-height: 320px;
+        
+    }
 }

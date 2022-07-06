@@ -11,20 +11,11 @@
     color: rgba(75,74,124,255)
 }
 
-@media (max-width: 765px) {
-    .wrapper {
-        grid-template-columns: minmax(320px, 1fr);
-        grid-template-areas:
-            "header" 
-            "body" 
-            "footer";
-    }
-
-    .sidebar {
-        display: none;
-    }
-
-    .header {
+@media (max-width: 720px) {
+    .Chart {
         display: block;
+        max-width:45%;
+        max-height: 320px;
+        
     }
 }

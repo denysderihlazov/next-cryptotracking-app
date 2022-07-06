@@ -10,3 +10,12 @@
 .info {
     color: rgba(75,74,124,255)
 }
+
+@media (max-width: 720px) {
+    .Chart {
+        display: block;
+        max-width:45%;
+        max-height: 320px;
+        
+    }
+}
